@@ -1,6 +1,6 @@
 package Entities;
 
-public class Cockatiel extends Bird implements Pet {
+public class Cockatiel extends Bird implements Pet, DomesticatedAnimal {
 
 	private String race;
 
@@ -33,6 +33,24 @@ public class Cockatiel extends Bird implements Pet {
 	public void caress() {
 		Cockatiel.super.sound();
 
+	}
+
+	@Override
+	public void feed() {
+		System.out.println("Feeding");
+		
+	}
+
+	@Override
+	public void takeToTheVet() {
+		System.out.println("Transporting Animal");
+		
+	}
+
+	@Override
+	public void callToTheVet() {
+		System.out.println("The vet is on the way");
+		
 	}
 
 }

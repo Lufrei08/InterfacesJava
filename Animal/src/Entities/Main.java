@@ -8,6 +8,7 @@ public class Main {
 		
 		Nick.caress();
 		Thunder.feed();
+		Nick.feed();
 
 	}
 
